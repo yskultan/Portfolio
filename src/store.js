@@ -13,8 +13,8 @@ export default new Vuex.Store({
             hello: "Hey there, I'm",
             quote: "{ translate great ideas into code }",
             description: [
-                "I'm a frontend developer and designer based in Krasnoyarsk, Russia! I'm ",
-                " years old and I also enjoy contributing to open source projects.",
+                "I'm a frontend developer and web designer based in Krasnoyarsk, Russia! I'm ",
+                " years old. I’m specialized in Vue.js and have professional experience working with React.js and Python.",
             ],
             label: "Get in Touch"
         },
@@ -22,8 +22,8 @@ export default new Vuex.Store({
             hello: "Привет, меня зовут",
             quote: "{ перевожу крутые идеи в код }",
             description: [
-                "Я фронтенд разработчица и дизайнер из Красноярска. Мне ",
-                " год. А еще мне нравится помогать различным проектам.",
+                "Я фронтенд разработчица и веб-дизайнер из Красноярска. Мне ",
+                " год. Люблю Vue.js, но также неплохо разбираюсь в React.js и Python.",
             ],
             label: "Написать"
         },
@@ -36,25 +36,25 @@ export default new Vuex.Store({
             surname: "Skultan",
             startDescription: "I’m Yulia",
             description:
-                ", a frontend developer and designer. I’m specialized in Vue.js and have professional experience working with React.js and Python. ",
-        },
+            ", vice European champion in checkers, MVP of European championship in basketball and head of student organizational comitteee. It proves that I always achieve my goals, know how to work in a team, also that I'm persistent and initiative. I love challenging tasks and challenging myself. Oh, and by the way I have a good sense of humor.",
+    },
         ru: {
             title: "Обо мне",
             name: "Юлия",
             surname: "Скултан",
             startDescription: "Я Юля",
             description:
-                ", фронтенд разработчица и дизайнер. Люблю Vue.js, но также неплохо разбираюсь в React.js и Python.",
+                ", чемпионка Европы по шашкам, лучший игрок Чемпионата Европы по баскетболу, руководитель организационного комитета института. Это доказывает то, что я всегда добиваюсь своих целей, умею работать в команде, а также отличаюсь упорством и инициативность. Люблю решать сложные задачи и развиваться. А еще я неплохо шучу",
         },
     },
     technologies: {
         en: { 
             title: "Skills",
-            subtitles: ["Programming", "Design", "Tools", "Experience"]
+            subtitles: ["Programming", "Frameworks", "Tools", "Experience"]
         },
         ru: { 
             title: "Навыки",
-            subtitles: ["Разработка", "Дизайн", "Инструменты", "Опыт"]
+            subtitles: ["Разработка", "Фреймворки", "Инструменты", "Опыт"]
         },
         programming:  [
             { name: "Vue.js", level: 90 },
@@ -62,18 +62,17 @@ export default new Vuex.Store({
             { name: "HTML & (S)CSS", level: 80 },
             { name: "JavaScript", level: 60 }
         ],
-        design: [
-            { name: "Web", level: 76 },
-            { name: "Graphic", level: 70 },
-            { name: "Motion", level: 50 }
+        libraries: [
+            { name: "Bootstrap", level: 86 },
+            { name: "Tailwind", level: 70 },
+            { name: "Vuetify", level: 60 },
+            { name: "Vuesax", level: 65 }
         ],
         tools:[
             { name: "git" },
             { name: "webpack" },
             { name: "docker" },
-            { name: "figma" },
-            { name: "sketch" },
-            { name: "adobe xd" },
+            { name: "figma" }
         ]
     },
     projectsPage: {
@@ -82,7 +81,7 @@ export default new Vuex.Store({
             description: "A list of my more relevant projects. I like to learn new technologies while doing side projects afterwork."
         },
         ru: {
-            title: "Контакты",
+            title: "Проекты",
             description: "Список моих наиболее интересных проектов. Мне нравится изучать новые технологии в свободное от работы время."
         },
     },
@@ -164,7 +163,7 @@ export default new Vuex.Store({
     ]}, 
     events: {
         en: [{ 
-            name: "Siberian Federal University",
+            name: "SibFU",
             description: "php, drupal, vue.js, flask",
             role: "Senior programmer",
             type: "work",
@@ -200,7 +199,7 @@ export default new Vuex.Store({
                 {description:" Created brandbook" },
             ]
         }, { 
-            name: "Siberian Federal Unviersity",
+            name: "SibFU",
             description: "information systems and technologies",
             role: "Student",
             type: "education",
@@ -214,7 +213,7 @@ export default new Vuex.Store({
             ]
         }],
         ru: [{ 
-            name: "Сибирский Федеральный Университет",
+            name: "СФУ",
             description: "php, drupal, vue.js, flask",
             role: "Старший программист",
             type: "работа",
@@ -250,7 +249,7 @@ export default new Vuex.Store({
                 {description:" Сделала брендбук" },
             ]
         }, { 
-            name: "Сибирский Федеральный Университет",
+            name: "СФУ",
             description: "Институт Космических и Информационных Технологий",
             role: "студентка",
             type: "образование",
@@ -267,13 +266,13 @@ export default new Vuex.Store({
     contactsPage: {
         en: {
             title: "Contacts",
-            description: "I'm not currently looking for a fulltime job but my inbox is always open. Whether for a potential project or idea, I'll try my best to answer your email!",
+            description: "I'm currently looking for a fulltime or part-time job. My inbox is always open. Whether for a potential project or idea, I'll try my best to answer your email!",
             label: "Get in touch",
             subtitle: "where else you can find me"
         },
         ru: {
             title: "Контакты",
-            description: "В данный момент я не ищу работу на полный день. Но вы всегда можете мне написать насчет потенциального проекта или идеи. Я постараюсь ответить на ваше сообщение.",
+            description: "В данный момент я ищу работу с полной или частичной занятостью. Вы всегда можете мне написать насчет потенциального проекта или идеи. Я постараюсь ответить на ваше сообщение.",
             label: "Написать",
             subtitle: "также вы можете найти меня здесь"
         },
@@ -281,7 +280,7 @@ export default new Vuex.Store({
     socials: [ 
         {
             name: "Github",
-            link: "https://github.com/skultan",
+            link: "https://github.com/yskultan",
             icon: "github" 
         }, {
             name: "Twitter",

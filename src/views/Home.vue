@@ -15,12 +15,12 @@
                 {{ profile[language].name }} {{ profile[language].surname }}.
             </h1>
             <div class="bg-primary  text-background shadow-lg text-center rounded-sm ">
-                <h1 class="font-bold md:text-3xl sm:text-2xl  text-xl ">{{ header[language].quote }}</h1>
+                <h1 class="font-bold md:text-3xl sm:text-xl">{{ header[language].quote }}</h1>
             </div>
         </div>
         <scene></scene>
         <div class="w-full my-2">
-            <div class="text-info text-xl">
+            <div class="text-info md:text-xl sm:text-md">
                 {{ header[language].description[0] }}
                 {{ age }}
                 {{ header[language].description[1] }}

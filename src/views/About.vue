@@ -1,11 +1,11 @@
 <template>
  <div class="flex-col justify-center">
-    <h1 class="font-bold text-primary  md:text-5xl text-4xl ">{{ profile[language].title }}</h1>
+    <h1 class="font-bold text-primary md:text-5xl text-4xl ">{{ profile[language].title }}</h1>
     <div class="my-8 md:flex bg-background-light rounded-sm p-8">
-        <img class="h-24 w-24 md:h-24 md:w-24 full mx-auto md:mx-0 sm:my-4 md:my-0 md:mr-6" src="../assets/img/profile.png">
-        <div class="text-center md:text-left">
-            <p class="text-info  text-lg ">
-                <span class="uppercase text-md font-bold text-accent">
+        <img class="h-24 w-24 full mx-auto md:my-auto md:mx-0 xs:mb-6 sm:mb-6 md:mr-6" src="../assets/img/profile.png">
+        <div class="text-justify">
+            <p class="text-info xs:text-xs sm:text-sm md:text-base">
+                <span class="uppercase font-bold text-accent">
                     {{ profile[language].startDescription }}
                 </span>
                 {{ profile[language].description }}
@@ -29,7 +29,7 @@
             <div class="shadow-lg rounded-sm bg-background-light p-6 ">
                 <span class="text-accent font-bold text-lg my-2">{{ technologies[language].subtitles[1] }}</span>
                 <technology
-                    v-for="(item, index) in technologies.design"
+                    v-for="(item, index) in technologies.libraries"
                     :key="index"
                     :index="index"
                     :parentData="item">
