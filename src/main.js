@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import store from './store'
+import VueAnalytics from 'vue-analytics';
 
 
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -12,6 +13,10 @@ library.add(faAddressCard, faMap, faChartBar, faLink, faGithub, faTwitter, faVk,
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.config.productionTip = false
+
+Vue.use(VueAnalytics, {
+  id: 'G-NZ0RB6XGN9'
+});
 
 new Vue({
   store,
