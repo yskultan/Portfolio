@@ -6,15 +6,15 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     title: ["Юлия Скултан", "Yulia Skultan"],
-    description: ["Я фронтенд разработчица из Красноярска. Хорошо знаю Vue.js. Вот мое портфолио.", "I'm a frontend developer specialized in Vue.js. Here's my portfolio website."],
+    description: ["Я фуллстак разработчица с уклоном во фронтенд из Красноярска. Хорошо знаю Vue.js. Вот мое портфолио.", "I'm a fullstack developer specialized in frontend and Vue.js. Here's my portfolio website."],
     languages: ["ru", "en"],
     header: {
         en: {
             hello: "Hey there, I'm",
             quote: "{ translate great ideas into code }",
             description: [
-                "I'm a frontend developer and web designer based in Krasnoyarsk, Russia! I'm ",
-                " years old. I’m specialized in Vue.js and have professional experience working with React.js and Python.",
+                "I'm a fullstack developer specialized in frontend and Vue.js based in Krasnoyarsk, Russia! I'm ",
+                " years old. I’m specialized in Vue.js and have professional experience working with Node.js and MongoDB",
             ],
             label: "Get in Touch"
         },
@@ -22,8 +22,8 @@ export default new Vuex.Store({
             hello: "Привет, меня зовут",
             quote: "{ перевожу крутые идеи в код }",
             description: [
-                "Я фронтенд разработчица и веб-дизайнер из Красноярска. Мне ",
-                " год. Люблю Vue.js, но также неплохо разбираюсь в React.js и Python.",
+                "Я фуллстак разработчица с уклоном во фронтенд и Vue.js из Красноярска. Мне ",
+                " год. Люблю Vue.js, но также неплохо разбираюсь в Node.js и MongoDB.",
             ],
             label: "Написать"
         },
@@ -50,23 +50,23 @@ export default new Vuex.Store({
     technologies: {
         en: { 
             title: "Skills",
-            subtitles: ["Programming", "Frameworks", "Tools", "Experience"]
+            subtitles: ["Frontend", "Backend", "Tools", "Experience"]
         },
         ru: { 
             title: "Навыки",
-            subtitles: ["Разработка", "Фреймворки", "Инструменты", "Опыт"]
+            subtitles: ["Фронтенд", "Бэкенд", "Инструменты", "Опыт"]
         },
-        programming:  [
+        frontend:  [
             { name: "Vue.js", level: 90 },
             { name: "React.js", level: 70 },
             { name: "HTML & (S)CSS", level: 80 },
             { name: "JavaScript", level: 60 }
         ],
-        libraries: [
-            { name: "Bootstrap", level: 86 },
-            { name: "Tailwind", level: 70 },
-            { name: "Vuetify", level: 60 },
-            { name: "Vuesax", level: 65 }
+        backend: [
+            { name: "Node.js", level: 70 },
+            { name: "Express", level: 80 },
+            { name: "MongoDB", level: 60 },
+            { name: "Mongoose", level: 65 }
         ],
         tools:[
             { name: "git" },
@@ -87,28 +87,30 @@ export default new Vuex.Store({
     },
     projects: {
         en: [{
-            name: "Admin dashboard",
-            description: "This admin panel was created for studying Vuesax. There are all the components from the docs and a couple of pages using them.",
-            link: "https://github.com/yskultan/Admin-dashboard",
-            icon: "chart-bar",
-            startDate: "August 7, 2019",
-            endDate: "Present",
+            name: "Advertisment aggregator",
+            description: "This website aggregates thousands of advs from 6 sources in realtime. Backend and frontend was created by me. Also there is map support.",
+            link: "https://skyliner24.ru",
+            icon: "home",
+            startDate: "May 16, 2021",
+            endDate: "Jun 8, 2021",
             developer: "yskultan",
             tags: [
+                { name: "#node.js" },
                 { name: "#vue" },
-                { name: "#vuesax" }
+                { name: "#mongodb" }
             ]
         },{
-            name: "Mapbox app",
-            description: "I created this app while learning QGIS for studying. It is an interactive map where you can add your own markers.",
-            link: "https://github.com/yskultan/Mapbox-app",
-            icon: "map",
-            startDate: "Sep 20, 2018",
-            endDate: "Present",
+            name: "Form with zip import/export",
+            description: "This form allows you to save form data such as text, images, files to zip archive and then import it for editing",
+            link: "https://github.com/yskultan/Form-with-ZIP-import-export",
+            icon: "file-archive",
+            startDate: "Oct 17, 2020",
+            endDate: "Nov 10, 2020",
             developer: "yskultan",
             tags: [
                 { name: "#vue" },
-                { name: "#mapbox" }
+                { name: "#base64" },
+                { name: "#blob" },
             ]
         },{
             name: "Portfolio",
@@ -116,7 +118,7 @@ export default new Vuex.Store({
             link: "https://github.com/yskultan/Portfolio",
             icon: "address-card",
             startDate: "Dec 20, 2019",
-            endDate: "Present",
+            endDate: "Jan 15, 2020",
             developer: "yskultan",
             tags: [
                 { name: "#vue" },
@@ -124,28 +126,30 @@ export default new Vuex.Store({
             ]
         }],
         ru: [{ 
-            name: "Админ панель",
-            description: "Эта админ панель была создана пока я изучала Vuesax. Там находятся все компоненты из документации. а также страницы с их использованием.",
-            link: "https://github.com/yskultan/Admin-dashboard",
-            icon: "chart-bar",
-            startDate: "Авг 7, 2019",
-            endDate: "Сейчас",
+            name: "Агрегатор объявлений",
+            description: "Сайт агрегирует объявления с 6 популярных досок (авито, n1 итд). Серверная и клиентская часть была написана мной. Есть возможность поиска по карте.",
+            link: "https://skyliner24.ru",
+            icon: "home",
+            startDate: "Май 16, 2021",
+            endDate: "Июн 8, 2021",
             developer: "yskultan",
             tags: [
+                { name: "#node.js" },
                 { name: "#vue" },
-                { name: "#vuesax" }
+                { name: "#mongodb" }
             ]
         },{
-            name: "Mapbox приложение",
-            description: "Я создала это приложение пока изучала QGIS в институте. Это интерактивная карта, где можно добавить свои маркеры.",
-            link: "https://github.com/yskultan/Mapbox-app",
-            icon: "map",
-            startDate: "Сен 20, 2018",
-            endDate: "Сейчас",
+            name: "Форма с сохранением и открытием из zip",
+            description: "Эта форма позволяет сохранять картинки/файлы/текст в единый архив с последующим его открытием и редактированием.",
+            link: "https://github.com/yskultan/Form-with-ZIP-import-export",
+            icon: "file-archive",
+            startDate: "Окт 17, 2020",
+            endDate: "Ноя 10, 2020",
             developer: "yskultan",
             tags: [
                 { name: "#vue" },
-                { name: "#mapbox" }
+                { name: "#base64" },
+                { name: "#blob" },
             ]
         },{
             name: "Портфолио",
@@ -153,7 +157,7 @@ export default new Vuex.Store({
             link: "https://github.com/yskultan/Portfolio",
             icon: "address-card",
             startDate: "Дек 20, 2019",
-            endDate: "Сейчас",
+            endDate: "Янв 15, 2020",
             developer: "yskultan",
             tags: [
                 { name: "#vue" },
@@ -163,12 +167,23 @@ export default new Vuex.Store({
     ]}, 
     events: {
         en: [{ 
+            name: "Razlet.ru",
+            description: "php, vue.js, jest, rest api",
+            role: "Middle frontend developer",
+            type: "work",
+            startDate: "Mar 2021",
+            endDate: "Present",
+            roles:[
+                {description:" Maintained two website on Vue.js" },
+                {description:" Developed new feature for filling form from barcode scan, payment and receipt printing" },
+            ]
+        }, { 
             name: "SibFU",
             description: "php, drupal, vue.js, flask",
             role: "Senior programmer",
             type: "work",
             startDate: "Jun 2020",
-            endDate: "Present",
+            endDate: "Mar 2021",
             roles:[
                 {description:" Separated russian and english versions of main website" },
                 {description:" Developed new feature in main website for schedules (xlsx files parsing)" },
@@ -213,14 +228,25 @@ export default new Vuex.Store({
             ]
         }],
         ru: [{ 
+            name: "Razlet.ru",
+            description: "php, vue.js, jest, rest api",
+            role: "Middle фронтенд разработчик",
+            type: "работа",
+            startDate: "Март 2021",
+            endDate: "Сейчас",
+            roles:[
+                {description:" Поддержка двух сайтов на Vue.js" },
+                {description:" Разработала новый раздел с заполнением формы из штрихкода, оплатой и печатью билета" },
+            ]
+        },{ 
             name: "СФУ",
             description: "php, drupal, vue.js, flask",
             role: "Старший программист",
             type: "работа",
             startDate: "Июнь 2020",
-            endDate: "Сейчас",
+            endDate: "Март 2021",
             roles:[
-                {description:" Отделила английскую версию основго сайта от русской" },
+                {description:" Отделила английскую версию основного сайта от русской" },
                 {description:" Разработала новую функцию на основном сайте (парсинг xlsx файлов)" },
                 {description:" Разработала новый сайт с помощью Vue.js и Flask" }
             ]

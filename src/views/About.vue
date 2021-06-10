@@ -19,7 +19,7 @@
             <div class="shadow-lg rounded-sm bg-background-light p-6 ">
                 <span class="text-accent font-bold text-lg my-2">{{ technologies[language].subtitles[0] }}</span>
                 <technology
-                    v-for="(item, index) in technologies.programming"
+                    v-for="(item, index) in technologies.frontend"
                     :key="index"
                     :index="index"
                     :parentData="item">
@@ -29,7 +29,7 @@
             <div class="shadow-lg rounded-sm bg-background-light p-6 ">
                 <span class="text-accent font-bold text-lg my-2">{{ technologies[language].subtitles[1] }}</span>
                 <technology
-                    v-for="(item, index) in technologies.libraries"
+                    v-for="(item, index) in technologies.backend"
                     :key="index"
                     :index="index"
                     :parentData="item">

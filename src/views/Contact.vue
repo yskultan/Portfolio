@@ -6,10 +6,21 @@
             <span class="text-info text-xl my-8">
                 {{ contactsPage[language].description}}
             </span><br>
-            <button class=" my-8 rounded-sm text-lg p-4 border-2 text-primary  hover:text-primary  hover:bg-primary-transparent " 
-                onclick="location.href='mailto:y.skultan@gmail.com'">
-                {{ contactsPage[language].label }}
-            </button>
+            <form class="p-6 mt-6 sm:w-100 md:w-1/2 ml-auto mr-auto flex flex-col justify-center">
+                <div class="flex flex-col mt-2">
+                    <input type="email" name="email" placeholder="Email" class="w-100 mt-2 py-3 px-3 rounded-sm bg-background border-2 border-accent-transparent text-info focus:border-secondary focus:outline-none">
+                </div>
+                <div class="flex flex-col mt-2">
+                    <input type="name" name="name" placeholder="Full Name" class="w-100 mt-2 py-3 px-3 rounded-sm bg-background border-2 border-accent-transparent text-info focus:border-secondary focus:outline-none">
+                </div>
+                <div class="flex flex-col mt-2">
+                    <textarea v-model="mes" placeholder="Message" class="w-100 h-32 mt-2 py-3 px-3 rounded-sm bg-background border-2 border-accent-transparent text-info focus:border-secondary focus:outline-none">
+                    </textarea>
+                </div>
+                <button type="submit" class="sm:w-100 md:w-1/2 ml-auto mr-auto my-6 rounded-sm text-lg p-4 border-2 text-secondary hover:bg-secondary-transparent">
+                    {{ contactsPage[language].label }}
+                </button>
+            </form>
         </div>
         <div class="my-8">
             <span class="text-info text-xl my-8">
