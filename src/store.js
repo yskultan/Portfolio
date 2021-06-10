@@ -6,14 +6,14 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     title: ["Юлия Скултан", "Yulia Skultan"],
-    description: ["Я фуллстак разработчица с уклоном во фронтенд из Красноярска. Хорошо знаю Vue.js. Вот мое портфолио.", "I'm a fullstack developer specialized in frontend and Vue.js. Here's my portfolio website."],
+    description: ["Я фронтенд разработчица из Красноярска. Хорошо знаю Vue.js. Вот мое портфолио.", "I'm a fullstack developer specialized in frontend and Vue.js. Here's my portfolio website."],
     languages: ["ru", "en"],
     header: {
         en: {
             hello: "Hey there, I'm",
             quote: "{ translate great ideas into code }",
             description: [
-                "I'm a fullstack developer specialized in frontendÍ based in Krasnoyarsk, Russia! I'm ",
+                "I'm a frontend developer based in Krasnoyarsk, Russia! I'm ",
                 " years old. I’m specialized in Vue.js and have professional experience working with Node.js and MongoDB",
             ],
             label: "Get in Touch"
@@ -22,7 +22,7 @@ export default new Vuex.Store({
             hello: "Привет, меня зовут",
             quote: "{ перевожу крутые идеи в код }",
             description: [
-                "Я фуллстак разработчица с уклоном во фронтенд из Красноярска. Мне ",
+                "Я фронтенд разработчица из Красноярска. Мне ",
                 " год. Люблю Vue.js, но также неплохо разбираюсь в Node.js и MongoDB.",
             ],
             label: "Написать"
@@ -63,10 +63,10 @@ export default new Vuex.Store({
             { name: "JavaScript", level: 60 }
         ],
         backend: [
-            { name: "Node.js", level: 70 },
-            { name: "Express", level: 80 },
-            { name: "MongoDB", level: 60 },
-            { name: "Mongoose", level: 65 }
+            { name: "Node.js", level: 40 },
+            { name: "Express", level: 50 },
+            { name: "MongoDB", level: 45 },
+            { name: "Mongoose", level: 55 }
         ],
         tools:[
             { name: "git" },
