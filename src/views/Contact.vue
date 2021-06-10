@@ -6,7 +6,7 @@
             <span class="text-info text-xl my-8">
                 {{ contactsPage[language].description}}
             </span><br>
-            <form class="p-6 mt-6 sm:w-100 md:w-1/2 ml-auto mr-auto flex flex-col justify-center">
+            <form method="POST" data-netlify="true" class="p-6 mt-6 sm:w-100 md:w-1/2 ml-auto mr-auto flex flex-col justify-center">
                 <div class="flex flex-col mt-2">
                     <input type="email" name="email" placeholder="Email" class="w-100 mt-2 py-3 px-3 rounded-sm bg-background border-2 border-accent-transparent text-info focus:border-secondary focus:outline-none">
                 </div>

@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   prefix: '',
   important: false,
@@ -22,7 +24,7 @@ module.exports = {
 
         primary: {
             default: '#ea7be4',
-            transparent: 'rgba(63,99,148,0.2)',
+            transparent: 'rgba(234,123,228,0.1)',
         },
 
         secondary: {
@@ -31,7 +33,8 @@ module.exports = {
         },
 
         accent: {
-            default: '#8ce4ec'
+            default: '#8ce4ec',
+            transparent: 'rgba(140, 228, 236, 0.5)'
         }
 
     },
@@ -339,7 +342,7 @@ module.exports = {
     backgroundRepeat: ['responsive'],
     backgroundSize: ['responsive'],
     borderCollapse: ['responsive'],
-    borderColor: ['responsive', 'hover', 'focus'],
+    borderColor: ['responsive', 'hover', 'focus', "invalid"],
     borderRadius: ['responsive'],
     borderStyle: ['responsive'],
     borderWidth: ['responsive'],
@@ -396,5 +399,13 @@ module.exports = {
     zIndex: ['responsive'],
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant, e }) {
+      addVariant('invalid', ({ modifySelectors, separator }) => {
+        modifySelectors(({ className }) => {
+          return `.${e(`invalid${separator}${className}`)}:invalid`;
+        });
+      });
+    }),
+  ],
 }
