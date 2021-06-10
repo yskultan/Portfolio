@@ -13,7 +13,7 @@ export default new Vuex.Store({
             hello: "Hey there, I'm",
             quote: "{ translate great ideas into code }",
             description: [
-                "I'm a fullstack developer specialized in frontend and Vue.js based in Krasnoyarsk, Russia! I'm ",
+                "I'm a fullstack developer specialized in frontendÍ based in Krasnoyarsk, Russia! I'm ",
                 " years old. I’m specialized in Vue.js and have professional experience working with Node.js and MongoDB",
             ],
             label: "Get in Touch"
@@ -22,7 +22,7 @@ export default new Vuex.Store({
             hello: "Привет, меня зовут",
             quote: "{ перевожу крутые идеи в код }",
             description: [
-                "Я фуллстак разработчица с уклоном во фронтенд и Vue.js из Красноярска. Мне ",
+                "Я фуллстак разработчица с уклоном во фронтенд из Красноярска. Мне ",
                 " год. Люблю Vue.js, но также неплохо разбираюсь в Node.js и MongoDB.",
             ],
             label: "Написать"
