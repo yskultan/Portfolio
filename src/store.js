@@ -174,7 +174,7 @@ export default new Vuex.Store({
             startDate: "Mar 2021",
             endDate: "Present",
             roles:[
-                {description:" Maintained two website on Vue.js" },
+                {description:" Maintained two website on Vue.js. One in SSR" },
                 {description:" Developed new feature for filling form from barcode scan, payment and receipt printing" },
             ]
         }, { 
@@ -235,7 +235,7 @@ export default new Vuex.Store({
             startDate: "Март 2021",
             endDate: "Сейчас",
             roles:[
-                {description:" Поддержка двух сайтов на Vue.js" },
+                {description:" Поддержка двух сайтов на Vue.js. Один из них SSR" },
                 {description:" Разработала новый раздел с заполнением формы из штрихкода, оплатой и печатью билета" },
             ]
         },{ 
