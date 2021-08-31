@@ -58,9 +58,9 @@ export default new Vuex.Store({
         },
         frontend:  [
             { name: "Vue.js", level: 90 },
-            { name: "React.js", level: 70 },
+            { name: "React.js", level: 50 },
             { name: "HTML & (S)CSS", level: 80 },
-            { name: "JavaScript", level: 60 }
+            { name: "JavaScript", level: 80 }
         ],
         backend: [
             { name: "Node.js", level: 40 },
@@ -72,6 +72,7 @@ export default new Vuex.Store({
             { name: "git" },
             { name: "webpack" },
             { name: "docker" },
+            { name: "jenkins" },
             { name: "figma" }
         ]
     },
@@ -175,7 +176,9 @@ export default new Vuex.Store({
             endDate: "Present",
             roles:[
                 {description:" Maintained two website on Vue.js. One in SSR" },
-                {description:" Developed new feature for filling form from barcode scan, payment and receipt printing" },
+                {description:" Created architecture and developed two websites" },
+                {description:" Isolated about 40 components and created UI-kit with documentation"},
+                {description:" Developed JWT auth module (SPA & SSR) solving race condition"},
             ]
         }, { 
             name: "SibFU",
@@ -236,7 +239,9 @@ export default new Vuex.Store({
             endDate: "Сейчас",
             roles:[
                 {description:" Поддержка двух сайтов на Vue.js. Один из них SSR" },
-                {description:" Разработала новый раздел с заполнением формы из штрихкода, оплатой и печатью билета" },
+                {description:" Спроектировала архитектуру и разработала два новых сайта" },
+                {description:" Изолировала около 40 компонентов и создала UI-kit с документацией"},
+                {description:" Создала модуль авторизации типа JWT (SPA & SSR), решая проблему race condition"},
             ]
         },{ 
             name: "СФУ",
