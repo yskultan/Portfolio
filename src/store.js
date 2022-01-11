@@ -58,8 +58,8 @@ export default new Vuex.Store({
         },
         frontend:  [
             { name: "Vue.js", level: 90 },
-            { name: "React.js", level: 50 },
-            { name: "HTML & (S)CSS", level: 80 },
+            { name: "Nuxt.js", level: 82 },
+            { name: "HTML & (S)CSS", level: 75 },
             { name: "JavaScript", level: 80 }
         ],
         backend: [
@@ -169,16 +169,19 @@ export default new Vuex.Store({
     events: {
         en: [{ 
             name: "Razlet.ru",
-            description: "php, vue.js, jest, rest api",
+            description: "vue.js, nuxt.js, jest, rest api",
             role: "Middle frontend developer",
             type: "work",
             startDate: "Mar 2021",
             endDate: "Present",
             roles:[
-                {description:" Maintained two website on Vue.js. One in SSR" },
-                {description:" Created architecture and developed two websites" },
+                {description:" Maintained two websites (SPA & SSR) and optimized their perfomance from ~30 to ~90 in Lighthouse" },
+                {description:" Architectured and developed three websites (Nuxt, Vue)" },
                 {description:" Isolated about 40 components and created UI-kit with documentation"},
                 {description:" Developed JWT auth module (SPA & SSR) solving race condition"},
+                {description:" Took duplicated functionality out of company's sites and created DDD-oriented SDK with functions/classes/entities/factories"},
+                {description:" Developed CLI module for integration with all company's services and fast scaffolding"},
+                {description:" Created PWA app with Nuxt.js and transformed it to published Android & iOS apps"},
             ]
         }, { 
             name: "SibFU",
@@ -232,16 +235,19 @@ export default new Vuex.Store({
         }],
         ru: [{ 
             name: "Razlet.ru",
-            description: "php, vue.js, jest, rest api",
+            description: "vue.js, nuxt.js, jest, rest api",
             role: "Middle фронтенд разработчик",
             type: "работа",
             startDate: "Март 2021",
             endDate: "Сейчас",
             roles:[
-                {description:" Поддержка двух сайтов на Vue.js. Один из них SSR" },
-                {description:" Спроектировала архитектуру и разработала два новых сайта" },
+                {description:" Занималась поддержкой двух сайтов (SPA & SSR) и оптимизировала их с ~30 до ~90 в Lighthouse" },
+                {description:" Спроектировала архитектуру и разработала три новых сайта (Nuxt, Vue)" },
                 {description:" Изолировала около 40 компонентов и создала UI-kit с документацией"},
                 {description:" Создала модуль авторизации типа JWT (SPA & SSR), решая проблему race condition"},
+                {description:" Вынесла дублирующийся функционал сайтов и создала SDK на основе DDD-паттерна c методами/классами/сущностями/фабриками"},
+                {description:" Разработала CLI-модуль для интеграции со всеми сервисами компании и быстрого создания проектов"},
+                {description:" Создала PWA-приложение на Nuxt.js и сформировала из него опубликованные приложения на Android и iOS"},
             ]
         },{ 
             name: "СФУ",
