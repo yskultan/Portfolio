@@ -73,7 +73,8 @@ export default new Vuex.Store({
             { name: "webpack" },
             { name: "docker" },
             { name: "jenkins" },
-            { name: "figma" }
+            { name: "figma" },
+            { name: "rollup" }
         ]
     },
     projectsPage: {
@@ -101,29 +102,29 @@ export default new Vuex.Store({
                 { name: "#mongodb" }
             ]
         },{
-            name: "Form with zip import/export",
-            description: "This form allows you to save form data such as text, images, files to zip archive and then import it for editing",
-            link: "https://github.com/yskultan/Form-with-ZIP-import-export",
-            icon: "file-archive",
-            startDate: "Oct 17, 2020",
-            endDate: "Nov 10, 2020",
+            name: "Website for airport",
+            description: "This official website was created for Yaroslavl's airport. Static content is being created using headless CMS.",
+            link: "https://yaravia.ru",
+            icon: "airplane",
+            startDate: "May 6, 2022",
+            endDate: "June 20, 2022",
             developer: "yskultan",
             tags: [
-                { name: "#vue" },
-                { name: "#base64" },
-                { name: "#blob" },
+                { name: "#nuxt" },
+                { name: "#cms" },
+                { name: "#ssr" },
             ]
         },{
-            name: "Portfolio",
-            description: "I always wanted to create portfolio website. After working with TailwindCSS I decided that with this library it would be really easy and fast.",
-            link: "https://github.com/yskultan/Portfolio",
-            icon: "address-card",
-            startDate: "Dec 20, 2019",
-            endDate: "Jan 15, 2020",
+            name: "Avia tickets aggregator",
+            description: "One of the biggest aggregators in Kyrgystan. Search, book and buy tickets online. ",
+            link: "https://razlet.kg",
+            icon: "ticket",
+            startDate: "Dec 20, 2021",
+            endDate: "Feb 15, 2022",
             developer: "yskultan",
             tags: [
                 { name: "#vue" },
-                { name: "#tailwindcss" }
+                { name: "#ssr" }
             ]
         }],
         ru: [{ 
@@ -140,48 +141,49 @@ export default new Vuex.Store({
                 { name: "#mongodb" }
             ]
         },{
-            name: "Форма с сохранением и открытием из zip",
-            description: "Эта форма позволяет сохранять картинки/файлы/текст в единый архив с последующим его открытием и редактированием.",
-            link: "https://github.com/yskultan/Form-with-ZIP-import-export",
-            icon: "file-archive",
-            startDate: "Окт 17, 2020",
-            endDate: "Ноя 10, 2020",
+            name: "Сайт для аэропорта",
+            description: "Сайт был создан для аэропорта Ярославля. Для создания контента используется Sulu Headless CMS.",
+            link: "https://yaravia.ru",
+            icon: "airplane",
+            startDate: "Май 6, 2022",
+            endDate: "Июн 20, 2022",
             developer: "yskultan",
             tags: [
-                { name: "#vue" },
-                { name: "#base64" },
-                { name: "#blob" },
+                { name: "#nuxt" },
+                { name: "#cms" },
+                { name: "#ssr" },
             ]
         },{
-            name: "Портфолио",
-            description: "Я всегда хотела создать сайт-портфолио. После работы с TailwindCSS я поняла, что с его помощью я смогу создать сайт быстро и легко.",
-            link: "https://github.com/yskultan/Portfolio",
-            icon: "address-card",
-            startDate: "Дек 20, 2019",
-            endDate: "Янв 15, 2020",
+            name: "Агрегатор авиабилетов",
+            description: "Один из самых больших агрегаторов авиабилетов в Киргизии. Возможен поиск, бронирование и онлайн-выкуп билетов. ",
+            link: "https://razlet.kg",
+            icon: "ticket",
+            startDate: "Дек 20, 2021",
+            endDate: "Фев 15, 2022",
             developer: "yskultan",
             tags: [
-                { name: "#vue" },
-                { name: "#tailwindcss" }
+                { name: "#nuxt" },
+                { name: "#ssr" }
             ]
         }
     ]}, 
     events: {
         en: [{ 
             name: "Razlet.ru",
-            description: "vue.js, nuxt.js, jest, rest api",
+            description: "vue.js, nuxt.js, jest, rest api, microservices",
             role: "Middle frontend developer",
             type: "work",
             startDate: "Mar 2021",
             endDate: "Present",
             roles:[
-                {description:" Maintained two websites (SPA & SSR) and optimized their perfomance from ~30 to ~90 in Lighthouse" },
-                {description:" Architectured and developed three websites (Nuxt, Vue)" },
+                {description:" Maintained two legacy websites (SPA & SSR) and optimized their perfomance from ~30 to ~90 in Lighthouse" },
+                {description:" Architectured and developed 5 websites (Nuxt, Vue)" },
                 {description:" Isolated about 40 components and created UI-kit with documentation"},
                 {description:" Developed JWT auth module (SPA & SSR) solving race condition"},
                 {description:" Took duplicated functionality out of company's sites and created DDD-oriented SDK with functions/classes/entities/factories"},
                 {description:" Developed CLI module for integration with all company's services and fast scaffolding"},
                 {description:" Created PWA app with Nuxt.js and transformed it to published Android & iOS apps"},
+                {description:" Created plugins for babel and rollup"}
             ]
         }, { 
             name: "SibFU",
@@ -242,12 +244,13 @@ export default new Vuex.Store({
             endDate: "Сейчас",
             roles:[
                 {description:" Занималась поддержкой двух сайтов (SPA & SSR) и оптимизировала их с ~30 до ~90 в Lighthouse" },
-                {description:" Спроектировала архитектуру и разработала три новых сайта (Nuxt, Vue)" },
+                {description:" Спроектировала архитектуру и разработала 5 новых сайтов (Nuxt, Vue)" },
                 {description:" Изолировала около 40 компонентов и создала UI-kit с документацией"},
-                {description:" Создала модуль авторизации типа JWT (SPA & SSR), решая проблему race condition"},
+                {description:" Создала модуль авторизации JWT (SPA & SSR), решая проблему race condition"},
                 {description:" Вынесла дублирующийся функционал сайтов и создала SDK на основе DDD-паттерна c методами/классами/сущностями/фабриками"},
                 {description:" Разработала CLI-модуль для интеграции со всеми сервисами компании и быстрого создания проектов"},
-                {description:" Создала PWA-приложение на Nuxt.js и сформировала из него опубликованные приложения на Android и iOS"},
+                {description:" Создала PWA-приложение на Nuxt.js и сформировала из него опубликованные приложения на Android и iOS"}, 
+                {description:" Создала плагины для babel и rollup"}
             ]
         },{ 
             name: "СФУ",
