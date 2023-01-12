@@ -6,10 +6,10 @@ import VueAnalytics from 'vue-analytics';
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faAddressCard, faHome, faFileArchive, faLink} from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faTwitter, faVk, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faTelegram, faVk, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-library.add(faAddressCard, faHome, faFileArchive, faLink, faGithub, faTwitter, faVk, faInstagram);
+library.add(faAddressCard, faHome, faFileArchive, faLink, faGithub, faTelegram, faVk, faInstagram);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 Vue.config.productionTip = false
