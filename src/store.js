@@ -323,9 +323,9 @@ export default new Vuex.Store({
             link: "https://github.com/yskultan",
             icon: "github" 
         }, {
-            name: "Twitter",
-            link: "https://twitter.com/yskultan",
-            icon: "twitter" 
+            name: "Telegram",
+            link: "https://t.me/skultan",
+            icon: "telegram" 
         }, {
             name: "Instagram",
             link: "https://www.instagram.com/yskultan",
